@@ -1,0 +1,78 @@
+{
+  "name": "PiP With Controlls",
+  "description": "Easier to control your Youtube player when in Picture in Picture mode",
+  "version": "1.0.0",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/icon19.png",
+      "38": "icons/icon38.png"
+    }
+  },
+  "commands": {
+    "1_video_toggle_pip": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+P",
+        "mac": "MacCtrl+Shift+P",
+        "chromeos": "Ctrl+Shift+P",
+        "linux": "Ctrl+Shift+P"
+      },
+      "description": "Video: Picture-in-Picture"
+    },
+    "2_focus_tab": {
+      "description": "Video: Open PiP Tab"
+    },
+    "3_playback_play_pause": {
+      "suggested_key": {
+        "windows": "MediaPlayPause",
+        "mac": "MediaPlayPause",
+        "chromeos": "MediaPlayPause",
+        "linux": "MediaPlayPause"
+      },
+      "description": "Video: Play/pause"
+    },
+    "4_playback_next": {
+      "suggested_key": {
+        "windows": "MediaNextTrack",
+        "mac": "MediaNextTrack",
+        "chromeos": "MediaNextTrack",
+        "linux": "MediaNextTrack"
+      },
+      "description": "Playlist: Next"
+    },
+    "5_playback_prev": {
+      "suggested_key": {
+        "windows": "MediaPrevTrack",
+        "mac": "MediaPrevTrack",
+        "chromeos": "MediaPrevTrack",
+        "linux": "MediaPrevTrack"
+      },
+      "description": "Playlist: Previous"
+    },
+    "6_playback_fast_forward": {
+      "description": "Playback: Fast forward"
+    },
+    "7_playback_backward": {
+      "description": "Playback: Backward"
+    },
+    "8_playback_increase_speed": {
+      "description": "Playback: increase speed"
+    },
+    "9_playback_decrease_speed": {
+      "description": "Playback: decrease speed"
+    }
+  },
+  "permissions": [
+    "<all_urls>",
+    "webNavigation",
+    "tabs"
+  ],
+  "minimum_chrome_version": "69.0.3483.0",
+  "manifest_version": 2
+}
